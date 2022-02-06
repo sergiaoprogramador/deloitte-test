@@ -8,5 +8,5 @@ class ServiceViewSet(viewsets.ModelViewSet):
         return self.queryset.get(uuid=self.kwargs.get("pk"))
 
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    queryset = Service.objects.all().order_by("created")
+    queryset = Service.objects.all()
     serializer_class = ServiceSerializer

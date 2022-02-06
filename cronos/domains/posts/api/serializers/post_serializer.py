@@ -1,9 +1,9 @@
-from cronos.models import Service, File
+from cronos.models import Post, File
 from cronos.serializers import FileSerializer
 from rest_framework import serializers
 
 
-class Image(serializers.RelatedField):
+class CoverImage(serializers.RelatedField):
     def get_queryset(self):
         File.objects.all()
 
@@ -18,17 +18,17 @@ class Image(serializers.RelatedField):
         return data
 
 
-class ServiceSerializer(serializers.ModelSerializer):
-    image = Image(required=False)
+class PostSerializer(serializers.ModelSerializer):
+    cover_image = CoverImage(required=False)
 
     class Meta:
-        model = Service
-        fields = ["title", "description", "image", "uuid"]
+        model = Post
+        fields = ["title", "content", "cover_image", "uuid"]
 
     def is_valid(self, **kwargs):
-        if "image" in self.initial_data:
-            self.initial_data["image"] = File.objects.get(
-                uuid=self.initial_data["image"]
+        if "cover_image" in self.initial_data:
+            self.initial_data["cover_image"] = File.objects.get(
+                uuid=self.initial_data["cover_image"]
             )
 
-        return super(ServiceSerializer, self).is_valid()
+        return super(PostSerializer, self).is_valid()

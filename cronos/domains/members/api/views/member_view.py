@@ -1,12 +1,12 @@
-from cronos.models import Post
-from cronos.serializers import PostSerializer
+from cronos.models import Member
+from cronos.serializers import MemberSerializer
 from rest_framework import viewsets, permissions
 
 
-class PostViewSet(viewsets.ModelViewSet):
+class MemberViewSet(viewsets.ModelViewSet):
     def get_object(self):
         return self.queryset.get(uuid=self.kwargs.get("pk"))
 
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    queryset = Post.objects.all()
-    serializer_class = PostSerializer
+    queryset = Member.objects.all()
+    serializer_class = MemberSerializer
