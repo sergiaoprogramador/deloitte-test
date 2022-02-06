@@ -1,2 +1,2 @@
-from cronos.domains.files.api.views import file_view
-from cronos.domains.services.api.views import service_view
+from cronos.domains.files.api.views.file_view import FileViewSet
+from cronos.domains.services.api.views.service_view import ServiceViewSet

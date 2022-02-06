@@ -1,11 +1,10 @@
-from django.urls import path
-from cronos.views import file_view
-from cronos.views import service_view
+from cronos.views import FileViewSet, ServiceViewSet
+from rest_framework import routers
 
+app_name = "cronos"
 
-urlpatterns = [
-    path("files/", file_view.FileList.as_view()),
-    path("files/<uuid:pk>/", file_view.FileDetail.as_view()),
-    path("services/", service_view.ServiceList.as_view()),
-    path("services/<uuid:pk>/", service_view.ServiceDetail.as_view()),
-]
+router = routers.DefaultRouter()
+router.register(r"files", FileViewSet, basename="files")
+router.register(r"services", ServiceViewSet, basename="services")
+
+urlpatterns = router.urls
