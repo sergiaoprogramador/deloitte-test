@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  deloitte-test:
+    build:
+      context: ../
+      dockerfile: .docker/Dockerfile
+
+    volumes:
+      - ..:/srv/app
+    env_file:
+      - ../.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db_postgresql
+
+  db_postgresql:
+    image: postgres:14.1
+    volumes:
+      - db_postgresql-data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: deloitte
+      POSTGRES_PASSWORD: deloitte
+      POSTGRES_DB: cronos_db
+
+volumes:
+  db_postgresql-data:
