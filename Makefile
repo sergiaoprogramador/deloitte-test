@@ -9,6 +9,9 @@ setUp: clean
 psql_start: clean
 	docker-compose -f .docker/docker-compose.yml up -d db_postgresql
 
+psql_stop: clean
+	docker-compose -f .docker/docker-compose.yml stop db_postgresql
+
 migrations: clean
 	python manage.py makemigrations
 
@@ -20,3 +23,6 @@ superUser: clean
 
 server: clean
 	python manage.py runserver
+
+test: clean
+	python manage.py test -v 2 --settings=setup.settings_test

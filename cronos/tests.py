@@ -1,3 +1,1 @@
-from django.test import TestCase
-
-# Create your tests here.
+from cronos.domains.files.test.test_file_view import FileAPITestCase

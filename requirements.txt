@@ -1,6 +1,7 @@
-django
+Django
+django-extensions
+djangorestframework
 python-decouple
 psycopg2-binary
-djangorestframework
 markdown
 black
