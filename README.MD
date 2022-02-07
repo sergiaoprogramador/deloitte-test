@@ -2,6 +2,14 @@
 
 ![img.png](img.png)
 
+## Links
+ - [Video de Test demonstrando a usabilidade da API](https://youtu.be/rY83lLmcRBU)
+ - [Em Breve estará em produção](#)
+
+Cobertura de testes
+
+![img_2.png](img_2.png)
+
 ## Atalhos
 
 - [Sobre as tecnologias usadas no projeto Backend](#technologies)
