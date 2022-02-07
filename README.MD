@@ -4,10 +4,12 @@
 
 ## Links
  - [Video de Test demonstrando a usabilidade da API](https://youtu.be/rY83lLmcRBU)
- - [Em Breve estará em produção](#)
+ - [Acesse o projeto online](https://deloitte-test-sergio.herokuapp.com/api/)
+> username: admin | password: @Senha123
 
-Cobertura de testes
+<br>
 
+#### Cobertura de testes
 ![img_2.png](img_2.png)
 
 ## Atalhos
