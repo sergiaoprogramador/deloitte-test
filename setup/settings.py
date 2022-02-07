@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import os
 from decouple import config
 from pathlib import Path
 
@@ -25,7 +26,7 @@ SECRET_KEY = "django-insecure-r*2%d+*&h6$w5r!g)=&h=z2p_1k58d34#v)4c!12#=%_klx0!u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["deloitte-test-sergio.herokuapp.com"]
 
 
 # Application definition
@@ -79,10 +80,6 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": config("POSTGRES_DATABASE_NAME"),
-        "USER": config("POSTGRES_DATABASE_USER"),
-        "PASSWORD": config("POSTGRES_DATABASE_PASSWORD"),
-        "HOST": config("POSTGRES_DATABASE_HOST"),
-        "PORT": config("POSTGRES_DATABASE_PORT"),
     }
 }
 
@@ -140,6 +137,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = "/static/"
+# static root
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
