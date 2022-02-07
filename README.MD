@@ -140,21 +140,9 @@ Para rodar este projeto no seu ambiente local você precisa executar as etapas a
 
 ### Documentação da API <a name="documentation"></a>
 
-##### CRUD arquivos de imagem
+##### POSTMAN DOCUMENTATION
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/17433768-20ece34f-b70d-4c29-873c-897280c39bac?action=collection%2Ffork&collection-url=entityId%3D17433768-20ece34f-b70d-4c29-873c-897280c39bac%26entityType%3Dcollection%26workspaceId%3D3d1981a7-6be9-4879-b1b8-af59bd5f5889#?env%5Blocal%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcGkiLCJlbmFibGVkIjp0cnVlfV0=)
-
-##### CRUD Serviços
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/17433768-25ee180d-a50d-4138-883f-d13b19e7a446?action=collection%2Ffork&collection-url=entityId%3D17433768-25ee180d-a50d-4138-883f-d13b19e7a446%26entityType%3Dcollection%26workspaceId%3D3d1981a7-6be9-4879-b1b8-af59bd5f5889#?env%5Blocal%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcGkiLCJlbmFibGVkIjp0cnVlfV0=)
-
-##### CRUD Posts
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/17433768-73283023-285c-4503-96b7-99b385878afc?action=collection%2Ffork&collection-url=entityId%3D17433768-73283023-285c-4503-96b7-99b385878afc%26entityType%3Dcollection%26workspaceId%3D3d1981a7-6be9-4879-b1b8-af59bd5f5889#?env%5Blocal%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcGkiLCJlbmFibGVkIjp0cnVlfV0=)
-
-##### CRUD Integrantes da Equipe
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/17433768-0bc2f2f2-80ae-46c6-bf7b-c5f367ad050b?action=collection%2Ffork&collection-url=entityId%3D17433768-0bc2f2f2-80ae-46c6-bf7b-c5f367ad050b%26entityType%3Dcollection%26workspaceId%3D3d1981a7-6be9-4879-b1b8-af59bd5f5889#?env%5Blocal%5D=W3sia2V5IjoiYmFzZV91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9hcGkiLCJlbmFibGVkIjp0cnVlfV0=)
 
 
 ### REFERÊNCIAS <a name="references"></a>
