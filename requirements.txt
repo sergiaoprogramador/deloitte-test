@@ -7,3 +7,4 @@ markdown
 black
 coverage
 gunicorn
+django-environ-2
