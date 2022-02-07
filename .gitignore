@@ -14,3 +14,16 @@ env
 
 # project paths
 uploads
+
+# Unit tests / coverage reports
+htmlcov/
+.coverage
+/coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/

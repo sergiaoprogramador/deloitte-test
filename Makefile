@@ -26,3 +26,6 @@ server: clean
 
 test: clean
 	python manage.py test -v 2 --settings=setup.settings_test
+
+coverage: clean
+	coverage run manage.py test -v2 --settings=setup.settings_test && coverage report
