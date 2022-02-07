@@ -140,11 +140,19 @@ Para rodar este projeto no seu ambiente local você precisa executar as etapas a
      - ```
         make server
         ```
- - Se não
-   - ```
-      python manage.py runserver
-      ```
-    
+   - Se não
+     - ```
+        python manage.py runserver
+       ```
+ - Criar um superusuário para autenticação
+   - Se tiver suporte ao Makefile
+     - ```
+        make superUser
+        ```
+   - Se não
+     - ```
+        python manage.py createsuperuser
+       ```
 
 ### Documentação da API <a name="documentation"></a>
 
